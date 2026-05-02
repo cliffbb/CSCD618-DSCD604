@@ -1,0 +1,490 @@
+
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>CSCD 618/DSCD 604: Deep Learning and Neural Networks</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <base href="/"> -->
+
+    <!-- <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
+    <link rel="icon" type="image/png" href="assets/img/icon.jpg"> 
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
+    
+    <link rel="stylesheet" href="./assets/css/app.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+
+    <!-- <link href="./assets/bootstrap-3.3.5/css/darkly.min.css" rel="stylesheet" /> -->
+    <link href="./assets/bootstrap-3.3.5/css/paper.min.css" rel="stylesheet" />
+    <script src="./assets/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+    <script src="./assets/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+    <script src="./assets/bootstrap-3.3.5/shim/respond.min.js"></script>
+
+    <script src="./assets/header-attrs-2.14/header-attrs.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
+    
+    <script src="./assets/js/app.js"></script>
+    <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <style type="text/css">
+        body {color: black;}
+        h5, #logo-text {color: rgb(21, 61, 112);}
+        #logo-text {font-size: x-large;}
+        .tool-logos {max-width: 100%; height: auto; overflow:hidden; text-align: center;}
+
+        ul {margin-top: 0; margin-bottom: 0; padding-top: 0; padding-bottom: 0;}
+        table {width: 100%; border-collapse: collapse;}
+        th, td {border: 1px solid black; padding: 1px 10px 1px 10px; text-align: left;} 
+        th {background-color: #f2f2f2;}
+        #schedule {text-align: center;}
+        img {max-width: 100%; height: auto;}
+        
+        table a {text-decoration: none !important;}
+        table a:hover { text-decoration: underline !important;}
+        a:hover { text-decoration: underline; }
+        p, ul, table {line-height: 1.3;}
+        li {text-align: justify;}
+        /* a:link, a:visited, a:hover, a:active {
+            text-decoration: none;
+        } */
+</style>
+    </style>
+</head>
+
+<body>
+    <div class="container main-container container-fluid" id="main">
+        <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div style="margin-bottom:20px;"></div>
+                <div class="col-md-3"><img src="./assets/img/UG-CS-logo.png"/></div>
+                <div class="col-md-9"><strong id="logo-text">CSCD 618/DSCD 604: Deep Learning and Neural Networks</strong></div>
+            </div>
+        </div>
+
+    <div class="row">
+     <div class="col-xs-12 col-md-10 col-md-offset-1">
+        <div style="margin-bottom:110px;"></div>
+        <div class="tool-logos">
+            <img src="./assets/img/nn-logo.jpg"/>
+        </div>
+
+        <div style="margin-bottom:40px;"></div>
+        <div class="">
+            <div class="">
+                <h4>Course description</h4>
+                <p class="text-justify">
+                Deep learning is an exciting and rapidly advancing field that utilises artificial neural networks to derive deeper insights from data. 
+                By employing a set of algorithms and models organised into multiple processing layers, deep learning enables complex data representation 
+                and extraction of valuable insights. Deep learning has significantly advanced the state of the art in various fields, 
+                including computer vision, speech recognition, natural language processing, and bioinformatics.
+
+                In this course, we will explore deep neural networks, focusing on architectures such as feed-forward models, which process information in a single direction,
+                and convolutional models, which are tailored for image tasks. We'll also cover essential techniques for sequence modelling, crucial for tasks like language 
+                translation and time series analysis. Additionally, we'll examine innovative concepts such as variational and adversarial models for data generation, 
+                attention mechanisms that enable models to focus on relevant aspects of input data, and optimisation strategies to improve model performance. 
+                <hr>
+            </p> 
+            </div>
+        </div>
+        <div class="">
+            <div class="">
+                <h4>Learning outcomes</h4>
+                <p class="text-justify" style="margin-bottom: 0px;">
+                At the end of this course, students should be able:
+                <ul>
+                    <li>To develop an advanced understanding of deep learning and different neural network architectures, such as convolutional neural networks and Transformers, which represent state-of-the-art approaches for today's data-driven predictive modeling.</li>
+                    <li>To identify real-world scenarios where application of deep learning makes sense in problem-solving across various fields and application areas.</li>
+                    <li>To develop and implement repertoire of different algorithms and approaches in deep learning, and understanding their various strengths and weaknesses.</li>
+                    <li>To combine both theoretical and practical concepts to conduct research in deep learning, and communicating the outcome professionally in form of a scientific paper and a formal oral presentation.</li>
+                </ul>
+                </p>
+                <hr>
+            </div>
+        </div>
+        
+        <div class=""> 
+            <div class="">
+                <h4>Instructors</h4>
+                <p class="text-justify">
+                Clifford Broni-Bediako (email: <a href="mailto:bronibbc@yahoo.co.uk">bronibbc@yahoo.co.uk</a>)</br> 
+                Solomon Mensah (email: <a href="mailto:smensah03@ug.edu.gh">smensah03@ug.edu.gh</a>)</br>
+                Michael Kojo Kolugu (email: <a href="mailto:mkkolugu@ug.edu.gh">mkkolugu@ug.edu.gh</a>)
+                <hr>
+            </p> 
+            </div>
+        </div>
+        
+        <div class="">
+            <div class="">
+                <h4>Prerequisites</h4>
+                <p class="text-justify">
+                There are <strong>no official prerequisites</strong> for this course; however, it would be very helpful if the student have proficiency in
+                 <a href="https://nbviewer.org/github/jrjohansson/scientific-python-lectures/tree/master/" target="_blank">Python</a>, comfortable with college level 
+                 <a href="https://courses.smp.uq.edu.au/MATH3401/Lectures/1051nosol.pdf" target="_blank">Calculus & Linear Algebra</a>
+                 (solving basic derivatives and understanding matrix vector operations and notation), and <a href="https://utstat.utoronto.ca/mikevans/jeffrosenthal/book.pdf" target="_blank">Probability & Statistics</a> 
+                 (understanding of basic probability, gaussian distributions, mean, standard deviation, etc.)
+                <hr>
+            </p> 
+            </div>
+        </div>
+
+        <!-- Lecture 3: Regularization and Optimization
+Regularization
+Stochastic Gradient Descent
+Momentum, AdaGrad, Adam
+Learning rate schedules -->
+
+        <div class="">
+            <div class="">
+                <h4>Course schedule</h4>
+                <table>
+                <thead>
+                    <tr><th id="schedule">Week</th><th>Lecture Contents</th><th style="width:35%;">Labs/Readings Activities</th><th style="width:30%;">Remarks/Extra Readings</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td colspan="4" style="color: rgb(21, 61, 112);"><b>Introduction</b></td></tr>
+                    <tr>
+                        <td id="schedule">1</td>
+                        <td>Course overview</br> Brief history of deep learning</td>  
+                        <td>
+                            <a href="https://colab.research.google.com/github/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/documents/recitation_0/0.08/Google_colab_recitation_0_8.ipynb#scrollTo=HzowVEBQBRp" target="_blank">Google Colab Usage <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab"/></a></br>
+                            <a href="https://github.com/zszazi/Deep-learning-in-cloud" target="_blank">List of of deep learning cloud resources</a></br> 
+                            <a href="https://arxiv.org/abs/1404.7828" target="_blank">Deep Learning in Neural Networks (2014).</a>
+                        </td>
+                        <td><a href="https://www.cs.cmu.edu/~epxing/Class/10715/reading/McCulloch.and.Pitts.pdf" target="_blank">McCullogh and Pitts paper (1943).</a></br>
+                        <a href="https://deeplearning.cs.cmu.edu/S26/documents/readings/Perceptrons-Epilogue-r.pdf" target="_blank">The New Connectionism (1988).</td>
+                    </tr>
+                    <!--  -->
+                    <tr><td colspan="4" style="color: rgb(21, 61, 112);"><b>Deep Learning (Neural Networks) Basics</b></td></tr>
+                    <tr>
+                        <td id="schedule">2</td>
+                        <td>Perceptron algorithm </br>Single-layer neural networks</td>
+                        <td>
+                            <a href="https://colab.research.google.com/github/rasbt/stat453-deep-learning-ss21/blob/main/L03/code/perceptron-numpy.ipynb" target="_blank">Perceptron <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab"/></a></br>
+                            <a href="https://deeplearning.cs.cmu.edu/S26/documents/readings/Perceptron_Learning_Algorithm_and_Convergence.pdf" target="_blank">The Perceptron Learning Algorithm and its Convergence (2017)</a></td>
+                        <td>
+                            <a href="https://deeplearning.cs.cmu.edu/S26/documents/recitation_0/0.04/Recitation%200.4%20-%20PyTorch.pdf" target="_blank">PyTorch Overview</a></br>
+                            <a href="https://deeplearning.cs.cmu.edu/S26/documents/readings/Rosenblatt_1959-09865-001.pdf" target="_blank">F. Rosenblatt's Perceptron (1958)</a></br>
+                            <span style="color: rgb(179, 8, 8, 0.836);">Assignment 1 out (Theory)</span> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="schedule">3</td>
+                        <td>Basics linear algebra and calculus for deep learning</td>
+                        <td>
+                            <a href="https://colab.research.google.com/github/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/documents/recitation_0/0.04/Recitation_0_4_PyTorch.ipynb" target="_blank">PyTorch Tutorial I <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab"/></a></br>
+                            <a href="https://colab.research.google.com/github/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/F25/document/Recitation_0_Series/0.5/0_5_Tensordot_%26_Einsum.ipynb#scrollTo=Dpo6Llp6jcmo" target="_blank">Tensordot & Einsum <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab"/></a></br>
+                            <a href="https://homepages.inf.ed.ac.uk/htang2/mlg2022/tutorial-3.pdf" target="_blank">Computation Graphs</a></br>  
+                            <a href="https://cs231n.stanford.edu/vecDerivs.pdf" target="_blank">Vector, Matrix, & Tensor Derivatives</a>
+                        </td>
+                        <td>
+                            <a href="https://colah.github.io/posts/2015-08-Backprop/" target="_blank">Calculus on Computational Graphs</a></br>
+                            <a href="https://cs231n.stanford.edu/handouts/derivatives.pdf" target="_blank">Derivatives & Vectorization</a>
+                        </td> 
+                    </tr>
+                    <tr>
+                        <td id="schedule">4</td>
+                        <td>Logistic regression </br>Multilayer perceptrons</br> Backpropagation and automatic differentiation </td>
+                        <td>
+                            <a href="https://colab.research.google.com/github/rasbt/stat453-deep-learning-ss21/blob/main/L08/code/logistic-regression.ipynb#scrollTo=qe3AYBm9unYd" target="_blank">Logistic Regression <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab"/></a></br>
+                            <a href="https://colab.research.google.com/github/cs231n/cs231n.github.io/blob/master/pytorch.ipynb#scrollTo=viZAQus4Qesj" target="_blank">PyTorch Tutorial II <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab"/></a></br>
+                            <a href="https://colab.research.google.com/github/cs231n/cs231n.github.io/blob/master/backprop.ipynb" target="_parent">Backpropagation <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab"/></a></br>
+                            <a href="https://cs231n.stanford.edu/handouts/linear-backprop.pdf" target="_blank">Backpropagation for a Linear Layer</a></br>
+                            <a href="https://cs231n.stanford.edu/slides/2026/section_2_backprop.pdf" target="_blank"> An Exercise in Backpropagation</a>
+                        </td>
+                        <td>
+                            <a href="https://cs231n.stanford.edu/vecDerivs.pdf" target="_blank">Automatic Differentiation in Machine Learning (2018)</a></br>
+                            <a href="https://dlsys.cs.washington.edu/pdf/lecture4.pdf" target="_blank">Backpropagation and Automatic Differentiation</a></br>
+                            <span style="color: rgb(179, 8, 8, 0.836);">Assignment 1 due </br> Assignment 2 out (Programming)</span> 
+                        </td>
+                    </tr> 
+                    <tr>
+                        <td id="schedule">5</td>
+                        <td> Data normalization</br> Weight initialization</br> Regularization</br> Optimization algorithms</td>
+                        <td>
+                           <a href="https://colab.research.google.com/github/rasbt/stat453-deep-learning-ss21/blob/main/L08/code/softmax-regression-mnist.ipynb#scrollTo=9lm7erpEu0xz" target="_blank"> Multinomial Regression <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab"/></a></br>
+                        </td>
+                        <td>
+                        <a href="https://distill.pub/2017/momentum/" target="_blank">Why Momentum Really Works</a></br>
+                        <a href="https://cs231n.stanford.edu/papers/lecun-98b.pdf" target="_blank">Effcient Backprop (1998)</a></br>
+                        <a href="http://neuralnetworksanddeeplearning.com/chap2.html" target="_blank">How the backpropagation algorithm works</a></br>
+                        <span style="color: rgb(179, 8, 8, 0.836);">Project proposal is due</span>
+                        </td>
+                    </tr>
+                    <!--  -->
+                    <tr><td colspan="4" style="color: rgb(21, 61, 112);"><b>Deep Learning for Vision & Language Modelling</b></td></tr>
+                    <tr>
+                        <td id="schedule">6</td>
+                        <td>Convolutional neural networks for computer vision and image processing I</td>
+                        <td></td>
+                        <td><span style="color: rgb(179, 8, 8, 0.836);"></span></td>
+                    </tr>
+                    <tr>
+                        <td id="schedule">7</td>
+                        <td>Convolutional neural networks for computer vision and image processing II</td>
+                        <td></td>
+                        <td><span style="color: rgb(179, 8, 8, 0.836);">Assignment 2 due </br> Assignment 3 out (Programming)</span></td>
+                    </tr>
+                    <tr>
+                        <td id="schedule">8</td>
+                        <td>Recurrent neural networks for sequence-to-sequence modelling</td>
+                        <td></td>
+                        <td><span style="color: rgb(179, 8, 8, 0.836);"></span></td>
+                    </tr>
+                    <tr>
+                        <td id="schedule">9</td>
+                        <td>Self-attention</br> Transformer networks</br> Multimodal networks</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <!--  -->
+                    <tr><td colspan="4" style="color: rgb(21, 61, 112);"><b>Deep Generative & Graph Models</b></td></tr>
+                    <tr>
+                        <td id="schedule">10</td>
+                        <td>Autoencoders </br> Variational autoencoders</td>
+                        <td><a href="https://gregorygundersen.com/blog/2018/04/29/reparameterization/" target="_blank">Reparameterization Trick</a></br>
+                        </td>
+                        <td><span style="color: rgb(179, 8, 8, 0.836);">Assignment 3 due </br> Assignment 4 out (Programming)</span></td>
+                    </tr>
+                    <tr>
+                        <td id="schedule">11</td>
+                        <td>Generative adversarial networks </br> Diffusion models</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td id="schedule">12</td>
+                        <td>Graph neural networks</td>
+                        <td></td>
+                        <td style="color: rgb(179, 8, 8, 0.836);"></td>
+                    </tr>
+                    <!--  -->
+                    <tr><td colspan="4" style="color: rgb(21, 61, 112);"><b>Research Trends</b></td></tr>
+                    <tr>
+                        <td id="schedule">13</td>
+                        <td>Beyond IID </br>Model compression</br> Knowledge distillation</br> Explainable AI, etc.</td>
+                        <td></td>
+                        <td><span style="color: rgb(179, 8, 8, 0.836);">Assignment 4 due</span></td>
+                    </tr>
+                    <tr>
+                        <td id="schedule">14</td>
+                        <td>---</td>
+                        <td>---</td>
+                        <td><span style="color: rgb(179, 8, 8, 0.836);"></span></td>
+                    </tr>
+                    <tr>
+                        <td id="schedule">15</td>
+                        <td>---</td>
+                        <td>---</td>
+                        <td><span style="color: rgb(179, 8, 8, 0.836);">Project submission (Tentative)</span></td>
+                    </tr>
+                </tbody>
+                </table>
+                <!-- <div style="margin-bottom:20px;"></div>
+                <p class="text-justify">
+                </p> -->
+                <hr>
+            </div>
+        </div>
+
+        <div class="">
+            <div class="">
+                <h4>Assignments</h4>
+                <p class="text-justify" style="margin-bottom: 0px;">
+                There will be three (3) programming assignments and one (1) pen-and-paper assignment. <strong>Note: The pen-and-paper assignment will be written in LaTex,
+                handwritten assignments will not be accepted</strong>. Details information regarding the assignments and midterm quiz will be announced here in the coming weeks.
+                </p> 
+                <hr>
+            </div>
+        </div>
+
+        <div class="">
+            <div class="">
+                <h4>Final project</h4>
+                <p class="text-justify" style="margin-bottom: 0px;">              
+                The final project offers students the chance to practically apply what they have learned in class to a problem of their interest. 
+                The potential projects can be:</br>
+                <span style="display: block; margin-left: 30px;"><strong>Algorithmic track.</strong> Develop a new model (algorithm) or a variant of existing models to tackle a problem of your choice
+                (e.g., vision or language problem). This research track may be more challenging; however, it can lead to publishable work in a reputable conference/journal.</br>
+                <strong>Application track.</strong> Choose a real-world problem and use existing deep learning models to solve it. 
+                If you have a specific background and interests, such as biology, engineering, economics, or physics, we encourage you to apply 
+                the deep learning algorithms covered in this class to problems in your domain.</br></span>
+                <!-- </p> -->
+                <!-- <p class="text-justify">   
+                </p> -->
+                <!-- <p class="text-justify" style="margin-bottom: 0px;"> -->
+                To spark some ideas, consider exploring latest deep learning publications from some top-tier conferences and other resources such as the list below:
+                <!-- </p> -->
+                <ul>
+                    <li>Conference on Computer Vision and Pattern Recognition <a href="https://cvpr.thecvf.com/virtual/2026/papers.html" target="_blank">(CVPR)</a></li>
+                    <li>European Conference on Computer Vision <a href="https://eccv.ecva.net/virtual/2024/papers.html" target="_blank"> (ECCV)</a></li>
+                    <li>Neural Information Processing Systems <a href="https://nips.cc/virtual/2025/loc/san-diego/papers.html" target="_blank"> (NIPS/NeurIPS)</a></li>
+                    <li>International Conference on Learning Representations <a href="https://iclr.cc/virtual/2025/papers.html?filter=titles" target="_blank"> (ICLR)</a></li>
+                    <li>International Conference on Machine Learning<a href="https://icml.cc/virtual/2025/papers.html" target="_blank"> (ICML)</a></li> 
+                    <li>Conference on Artificial Intelligence <a href="https://aaai.org/conference/aaai/" target="_blank"> (AAAI)</a></li>
+                    <li>International Joint Conference on Artificial Intelligence <a href="https://www.ijcai.org/all_proceedings" target="_blank"> (IJCAI)</a></li>
+                    <li>Winter Conference on Applications of Computer Vision <a href="https://wacv.thecvf.com/Conferences/2026/AcceptedPapers" target="_blank"> (WACV)</a></li>
+                    <li>Kaggle challenge<a href="https://www.kaggle.com/competitions"> website</a></li>
+                    <li>Awesome projects at <a href="https://endymecy.github.io/awesome-deeplearning-resources/awesome_projects.html" target="_blank">here</a> and
+                    <a href="https://github.com/NirantK/awesome-project-ideas" target="_blank">here</a>
+                    </li>
+                </ul>
+                <p class="text-justify">
+                Students can form teams of up to 3 persons. Student are encourage to work in teams, since the project work is quite demanding, however, you may also work alone.
+                Details information regarding the final project will be announced here in the coming weeks.
+                </p>
+                <!-- <p class="text-justify" style="margin-bottom: 0px;"></p> -->
+                <!-- <ul>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                </ul> -->
+                <hr>
+            </div>
+        </div>
+
+        <div class="">
+            <div class="">
+                <h4>Course textbook</h4>
+                <p class="text-justify" style="margin-bottom: 0px;">
+                The course will not follow a specific textbook, but will draw from a number of sources. The following are optional reference textbooks students may find useful:
+                <ul>
+                    <li><strong>The Little Book of Deep Learning</strong>, <i>François Fleuret</i>, 2024 <a href="https://fleuret.org/public/lbdl.pdf">(Free pdf online)</a>.</li>
+                    <li><strong>Dive Into Deep Learning</strong>, <i>Aston Zhang, Zachary C. Lipton, Mu Li, and Alexander J. Smola</i>, 2020 <a href="https://d2l.ai/d2l-en.pdf">(Free pdf online)</a>.</li>
+                    <li><strong>Deep Learning</strong>, <i>Ian Goodfellow, Yoshua Bengio, Aaron Courville</i>, 2017 <a href="https://www.deeplearningbook.org/">(Online book)</a>. </li>
+                    <li><strong>Neural Networks and Deep Learning</strong>, <i>S Michael Nielsen</i>, 2016 <a href="http://neuralnetworksanddeeplearning.com/">(Online book)</a>.</li>
+                </ul> 
+                </p> 
+                <hr>
+            </div>
+        </div>
+        <div class="">
+            <div class="text-justify">
+                <h4>Grading policy</h4>
+                <p>
+                There is <strong>no</strong> midterm or final exam for this course. The final week of the class is reserved for project presentations 
+                and the submission of project reports. The grading of this course will be a model: \(h(x_1, x_2, x_3) = 0.6x_1 + 0.35x_2 + 0.05x_3\)
+                <strong>where \(x_1\) is the four assignments (15% each, making 60% in total), \(x_2\) is the final project (35%), 
+                and \(x_3\) is a 5% professional and responsible conduct of student</strong>. 
+                The model \(h\) shall grade student's performance with respect to the information in the table below.</p>
+                <table style="table-layout: auto; width: auto; padding-top: 0;">
+                <thead>
+                    <tr><th id="schedule">Grade</th><th id="schedule">Marks (%)</th><th>Interpretation</th><th id="schedule">Grade Point</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td id="schedule">A</td><td id="schedule">80 - 100</td><td>Excellent</td><td id="schedule">4.00</td></tr>
+                    <tr><td id="schedule">B+</td><td id="schedule">70 - 79</td><td>Very Good</td><td id="schedule">3.50</td></tr>
+                    <tr><td id="schedule">B</td><td id="schedule">60 - 69</td><td>Good</td><td id="schedule">3.00</td></tr>
+                    <tr><td id="schedule">C</td><td id="schedule">50 - 59</td><td>Pass</td><td id="schedule">2.00</td></tr>
+                    <tr><td id="schedule">D</td><td id="schedule">30 - 49</td><td>Fail</td><td id="schedule">1.50</td></tr>
+                    <tr><td id="schedule">F</td><td id="schedule">0 - 29</td><td>Pass</td><td id="schedule">1.00</td></tr>
+                </tbody>
+                </table>
+                <hr>
+            </div>
+        </div>
+        
+        <div class="">
+            <div class="">
+                <h4>Students responsibilities and conduct</h4>
+                <p class="text-justify">
+                Students are expected to read the assigned materials before each scheduled class, attend and actively participate in discussions, complete 
+                assignments and projects on time, and seek help as soon as they encounter difficulties. Attendance will not be taken; therefore, 
+                you are expected to attend class regularly and be prepared to participate in the learning process and contribute to your group project. 
+                Students are expected to turn off their mobile phones and refrain from sending emails, texts, and other messages. Also, be respectful and 
+                courteous towards other students and the instructors.
+                </p> 
+                <hr>
+            </div>
+        </div>
+
+        <div class="">
+            <div class="">
+                <h4>Academic honesty, collaboration, AI tools usage</h4>
+                <p class="text-justify" style="margin-bottom: 0px;">
+                UG students and faculty are expected to uphold the highest standards of academic honesty. Students can find information on the core principles and 
+                standards in the University's policy on academic integrity, which is accessible at the
+                <a href="https://www.ug.edu.gh/pad/sites/pad/files/2024-07/PLAGIARISM%20POLICY.pdf" target="_blank">University of Ghana Plagiarism Policy</a>.
+                Plagiarism includes, but not limited to:</p>
+                <ul>
+                    <li>Copying of code or text with none or minimal reformatting (e.g., just changing variable names);</li>
+                    <li>Just translating an algorithm or a script from one language to another; and</li>
+                    <li>Reproducing (copying and pasting) code or text generated by an automatic code/text generation tool.</li>
+                </ul>
+                <p class="text-justify">
+                Students must ensure that full acknowledgement (citation) is given to the authors of any source code or text that is reused. Students' works may be 
+                checked using similarity-detection software. <strong>At a minimum, violating the plagiarism policy and examination rules will result in a grade of 0 for a 
+                particular assignment/quiz. Repeated violations may be referred to Academic Affairs for a more severe penalty</strong>.
+                <!-- </p>
+                <p class="text-justify"> -->
+                This class offers a collaborative learning experience. Students are expected to discuss ideas with their peers but should write their own solutions 
+                independently, without referencing solutions from other students. This encourages students to work independently while sharing ideas on how to test 
+                their implementation and evaluate their own work, rather than claiming other students' work as their own, which is a crucial part of integrity in 
+                their future careers. Sharing your solutions with another student breaches the University's examination rules. Therefore, students should not make 
+                their assignment solutions publicly available, such as posting them on social networks or a public git repository (the final project work can 
+                be hosted on a public git repository after submission).
+                <!-- </p>
+                <p class="text-justify"> -->
+                Students are permitted to use generative AI tools, such as Gemini, GPT-4, and Co-Pilot, in a manner that is considered acceptable as human collaboration. 
+                You are not allowed to ask for solutions or copy code directly, and you should indicate when a generative AI tool is used. Like human collaboration 
+                assistance, students are ultimately responsible and accountable for their own work.
+                </p>
+                <hr>
+            </div>
+        </div>
+
+        <div class="">
+            <div class="">
+                <h4>Additional resources</h4>
+                <p class="text-justify" style="margin-bottom: 0px;">
+                The following resources maybe helpful to students:
+                <ul>
+                    <li><a href="https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes">Learn LaTeX in 30 minutes</a></li>
+                    <li><a href="https://www.tug.org/twg/mactex/tutorials/ltxprimer-1.0.pdf">LaTeX Tutorials</a></li>
+                    
+                    <!-- 
+                    <li><a href="https://greenteapress.com/wp/think-python/">Think Python: How to Think Like a Computer Scientist</a></li>
+                    <li><a href="https://jakevdp.github.io/WhirlwindTourOfPython/index.html">A Whirlwind Tour of Python</a></li>
+                    <li><a href="https://github.com/jakevdp/PythonDataScienceHandbook">Python Data Science Handbook</a></li>
+                    <li><a href="https://www.kaggle.com/learn/python">Kaggle Learn Python Tutorials</a></li>
+                    <li><a href="https://nbviewer.org/github/jrjohansson/scientific-python-lectures/tree/master/">Scientific Python Lectures</a></li>
+                    <li><a href="https://automatetheboringstuff.com/">Automate the Boring Stuff with Python</a></li>
+                    <li><a href="https://www.pythoncheatsheet.org/">Python Cheatsheet</a></li>
+                    <li><a href="https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf">Conda Cheatsheet</a></li>
+                    <li><a href="https://education.github.com/git-cheat-sheet-education.pdf">Git Cheatsheet</a></li>
+                    <li><a href="https://mkzia.github.io/eas503-book/chapters/intro.html">Python for Data Scientists (University at Buffalo)</a></li> -->
+                </ul> 
+                </p> 
+                <hr>
+            </div>
+        </div>
+
+        <div style="margin-bottom:110px;"></div>
+        <div class="">
+            <div class="">
+                <hr style="padding: 0; margin: 0;">
+                <p class="text-right" style="padding: 0; margin: 0; font-size: 12px;">Website by CBB</p>
+                <hr style="padding: 0; margin: 0;">
+            </div>
+        </div>
+
+    </div>
+</div>
+</div>
+
+</body>
+</html>
