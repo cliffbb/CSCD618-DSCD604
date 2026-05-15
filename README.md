@@ -1,1 +1,1 @@
-# DSCD 601: Programming for Data Scientists I
+# CSCD 618/DSCD 604: Deep Learning and Neural Networks
